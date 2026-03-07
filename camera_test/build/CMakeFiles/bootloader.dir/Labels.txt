@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/umeshgopi/Sodahacks/Bin_Classification/camera_test/build/CMakeFiles/bootloader
+/Users/umeshgopi/Sodahacks/Bin_Classification/camera_test/build/CMakeFiles/bootloader.rule
+/Users/umeshgopi/Sodahacks/Bin_Classification/camera_test/build/CMakeFiles/bootloader-complete.rule
+/Users/umeshgopi/Sodahacks/Bin_Classification/camera_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/umeshgopi/Sodahacks/Bin_Classification/camera_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/umeshgopi/Sodahacks/Bin_Classification/camera_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/umeshgopi/Sodahacks/Bin_Classification/camera_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/umeshgopi/Sodahacks/Bin_Classification/camera_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/umeshgopi/Sodahacks/Bin_Classification/camera_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/umeshgopi/Sodahacks/Bin_Classification/camera_test/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
