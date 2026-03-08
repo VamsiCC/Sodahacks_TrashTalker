@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "camera_test",
-    "project_version":    "fbe8ba6-dirty",
+    "project_version":    "985431c-dirty",
     "project_path":       "/Users/vchilamkur/Documents/GitHub/Bin_Classification/camera_test",
     "idf_path":           "/Users/vchilamkur/esp/esp-idf",
     "build_dir":          "/Users/vchilamkur/Documents/GitHub/Bin_Classification/camera_test/build",

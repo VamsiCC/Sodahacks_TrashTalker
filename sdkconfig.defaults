@@ -1,0 +1,18 @@
+connect to vamsi's hotspot
+
+
+lsof /dev/cu.usbserial-1140 2>/dev/null | awk 'NR>1{print $2}' | sort -u | xargs kill 2>/dev/null; sleep 1; echo "done"
+
+source ~/esp/esp-idf/export.sh 2>/dev/null && cd /Users/vchilamkur/Documents/GitHub/Bin_Classification/camera_test && idf.py build 2>&1 | tail -10
+
+source ~/esp/esp-idf/export.sh 2>/dev/null && cd /Users/vchilamkur/Documents/GitHub/Bin_Classification/camera_test && idf.py -p /dev/cu.usbserial-1140 flash monitor
+
+
+
+
+
+wifi:connected with Vamsi's iPhone (2), aid = 2, channel 6
+STA: got IP 172.20.10.9
+Stream URL:  http://172.20.10.9/
+
+open http://172.20.10.9/
