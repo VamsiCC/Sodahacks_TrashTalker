@@ -1,0 +1,187 @@
+p_drv:��0
+mode:DIO, clock div:�H��+�:0x3fff0030,len:���j
+load:0x400�ets Jun  8 2016 �Ғ��57
+
+rst:0x1 (�]RON_RESET),boot'��3 (SPI_FAST_FLASH%==Q)
+configsip: 0,�A%WP:0xee
+clk_drv:0x�b�}����0x00,d_drv'��0,cs0_drv:0x00,hd_drv'��0,wp_drv:0x00
+mode'T�	�����div:2
+�+�:0x3fff0030,lYK���6
+load:0x4007���bb���15716
+load:0x40080400,���4
+ho 8 tail 4 room 4
+load:0x4008���bb���3860
+entry 0x4008063c
+[0;32mI (30) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Mar  7 2026 15:32:34[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v1.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 001f0000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3c188h (246152) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=0004c1b0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=0004c1d4 vaddr=3ffb0000 size=03e44h ( 15940) load[0m
+[0;32mI (183) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c2864h (796772) map[0m
+[0;32mI (456) esp_image: segment 4: paddr=0011288c vaddr=3ffb3e44 size=029f4h ( 10740) load[0m
+[0;32mI (461) esp_image: segment 5: paddr=00115288 vaddr=40080000 size=1c7dch (116700) load[0m
+[0;32mI (520) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (520) boot: Disabling RNG early entropy source...[0m
+[0;32mI (531) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (532) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (532) esp_psram: Speed: 40MHz[0m
+[0;32mI (532) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (538) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (546) cpu_start: Multicore app[0m
+[0;32mI (1452) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1460) cpu_start: Pro cpu start user code[0m
+[0;32mI (1460) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1460) app_init: Application information:[0m
+[0;32mI (1460) app_init: Project name:     camera_test[0m
+[0;32mI (1465) app_init: App version:      fbe8ba6-dirty[0m
+[0;32mI (1469) app_init: Compile time:     Mar  7 2026 15:32:28[0m
+[0;32mI (1474) app_init: ELF file SHA256:  6c41ee8a1...[0m
+[0;32mI (1479) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (1482) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1486) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1490) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1495) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1501) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1506) heap_init: At 3FFBECA8 len 00021358 (132 KiB): DRAM[0m
+[0;32mI (1511) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1517) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1522) heap_init: At 4009C7DC len 00003824 (14 KiB): IRAM[0m
+[0;32mI (1528) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1536) spi_flash: detected chip: generic[0m
+[0;32mI (1538) spi_flash: flash io: dio[0m
+[0;32mI (1542) main_task: Started on CPU0[0m
+[0;32mI (1552) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1552) main_task: Calling app_main()[0m
+[0;32mI (1632) classify: Classification task started[0m
+[0;32mI (1632) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1632) cam_hal: cam init ok[0m
+[0;32mI (1632) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1642) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1642) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1682) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1682) camera: Detected OV2640 camera[0m
+[0;32mI (1682) camera: Detected camera at address=0x30[0m
+[0;32mI (1762) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1762) esp32 ll_cam: node_size: 2560, nodes_per_line: 1, lines_per_node: 1, dma_half_buffer_min:  2560, dma_half_buffer: 15360,lines_per_half_buffer:  6, dma_buffer_size: 30720, image_size: 153600[0m
+[0;32mI (1772) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 2560, node_cnt: 12, total_cnt: 10[0m
+[0;32mI (1782) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1782) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1792) cam_hal: cam config ok[0m
+[0;32mI (1792) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1862) classify: Camera OK (RGB565 QVGA)[0m
+[0;32mI (1882) wifi:wifi driver task: 3ffd5864, prio:23, stack:6656, core=0[0m
+[0;32mI (1892) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (1892) wifi:wifi certification version: v7.0[0m
+[0;32mI (1902) wifi:config NVS flash: enabled[0m
+[0;32mI (1902) wifi:config nano formatting: disabled[0m
+[0;32mI (1902) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1902) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1912) wifi:Init management short buffer num: 32[0m
+[0;32mI (1912) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1922) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1922) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1932) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1932) wifi_init: rx ba win: 6[0m
+[0;32mI (1932) wifi_init: accept mbox: 6[0m
+[0;32mI (1942) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1942) wifi_init: udp mbox: 6[0m
+[0;32mI (1942) wifi_init: tcp mbox: 6[0m
+[0;32mI (1942) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1952) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1952) wifi_init: tcp mss: 1440[0m
+[0;32mI (1952) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1962) wifi_init: WiFi RX IRAM OP enabled[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (2032) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (2102) wifi:mode : sta (8c:4f:00:ac:7f:c8) + softAP (8c:4f:00:ac:7f:c9)[0m
+[0;32mI (2112) wifi:enable tsf[0m
+[0;32mI (2112) wifi:Total power save buffer number: 16[0m
+[0;32mI (2112) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (2112) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (2122) classify: AP 'ESP32-CAM' started -> http://192.168.4.1/[0m
+[0;32mI (2122) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (2132) classify: STA connecting to eduroam as 'vchilamkur@berkeley.edu'...[0m
+[0;32mI (2142) classify: HTTP server on port 80[0m
+[0;32mI (2142) classify: === ESP32-CAM Waste Classifier ===[0m
+[0;32mI (2142) classify: Stream:  http://192.168.4.1/ (connect to AP 'ESP32-CAM')[0m
+[0;32mI (2152) classify: Model:   google/gemini-2.5-flash-lite[0m
+[0;32mI (2162) classify: Let camera see empty scene for ~2s to learn background[0m
+[0;32mI (2162) main_task: Returned from app_main()[0m
+[0;32mI (2482) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2482) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3482) wifi:state: auth -> init (0x200)[0m
+[0;32mI (3492) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (3492) classify: STA: disconnected, reconnecting...[0m
+[0;32mI (4082) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4082) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4092) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (5102) wifi:state: assoc -> init (0x400)[0m
+[0;32mI (5112) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (5112) classify: STA: disconnected, reconnecting...[0m
+[0;32mI (5892) wifi:ap channel adjust o:1,1 n:6,2[0m
+[0;32mI (5892) wifi:new:<6,0>, old:<1,0>, ap:<6,2>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5902) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (5962) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (6002) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (6742) wifi:state: run -> init (0x17c0)[0m
+[0;32mI (6752) wifi:new:<6,0>, old:<6,0>, ap:<6,2>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (6752) classify: STA: disconnected, reconnecting...[0m
+[0;32mI (6942) wifi:ap channel adjust o:6,2 n:1,1[0m
+[0;32mI (6942) wifi:new:<1,0>, old:<6,0>, ap:<1,1>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (6952) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (7962) wifi:state: auth -> init (0x200)[0m
+[0;32mI (7972) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (7972) classify: STA: disconnected, reconnecting...[0m
+[0;32mI (8782) wifi:ap channel adjust o:1,1 n:6,2[0m
+[0;32mI (8782) wifi:new:<6,0>, old:<1,0>, ap:<6,2>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (8792) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (8812) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (8832) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (38832) wifi:state: run -> init (0xcc00)[0m
+[0;32mI (38842) wifi:new:<6,0>, old:<6,0>, ap:<6,2>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (38842) classify: STA: disconnected, reconnecting...[0m
+[0;32mI (39012) wifi:ap channel adjust o:6,2 n:1,1[0m
+[0;32mI (39012) wifi:new:<1,0>, old:<6,0>, ap:<1,1>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (39012) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (40022) wifi:state: auth -> init (0x200)[0m
+[0;32mI (40032) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (40032) classify: STA: disconnected, reconnecting...[0m
+[0;32mI (40842) wifi:ap channel adjust o:1,1 n:6,2[0m
+[0;32mI (40842) wifi:new:<6,0>, old:<1,0>, ap:<6,2>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (40842) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (40862) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (40882) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (41542) wifi:state: run -> init (0x17c0)[0m
+[0;32mI (41552) wifi:new:<6,0>, old:<6,0>, ap:<6,2>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (41552) classify: STA: disconnected, reconnecting...[0m
+[0;32mI (43132) wifi:ap channel adjust o:6,2 n:11,2[0m
+[0;32mI (43132) wifi:new:<11,0>, old:<6,0>, ap:<11,2>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (43132) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (43162) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (43182) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (64482) wifi:state: run -> init (0x17c0)[0m
+[0;32mI (64492) wifi:new:<11,0>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (64492) classify: STA: disconnected, reconnecting...[0m
+[0;32mI (67372) wifi:new:<11,2>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (67382) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (68392) wifi:state: auth -> init (0x200)[0m
+[0;32mI (68402) wifi:new:<11,0>, old:<11,2>, ap:<11,2>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (68402) classify: STA: disconnected, reconnecting...[0m
+[0;33mW (71292) classify: STA: disconnected, reconnecting...[0m
+[0;32mI (71532) wifi:ap channel adjust o:11,2 n:1,1[0m
+[0;32mI (71542) wifi:new:<1,0>, old:<11,0>, ap:<1,1>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (71542) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (71562) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (71562) wifi:state: assoc -> run (0x10)[0m

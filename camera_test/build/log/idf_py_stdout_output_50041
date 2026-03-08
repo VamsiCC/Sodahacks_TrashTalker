@@ -1,0 +1,17 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /Users/vchilamkur/Documents/GitHub/Bin_Classification/camera_test/build/bootloader/esp-idf/esptool_py && /Users/vchilamkur/.espressif/python_env/idf5.4_py3.14_env/bin/python /Users/vchilamkur/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/vchilamkur/Documents/GitHub/Bin_Classification/camera_test/build/bootloader/bootloader.bin
+Bootloader binary size 0x6560 bytes. 0xaa0 bytes (9%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[5/9] Linking C static library esp-idf/main/libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable camera_test.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.11.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /Users/vchilamkur/Documents/GitHub/Bin_Classification/camera_test/build/camera_test.bin
+[9/9] cd /Users/vchilamkur/Documents/GitHub/Bin_Classification/camera_test/build/esp-idf/esptool_py && /Users/vchilamkur/.espressif/python_env/idf5.4_py3.14_env/bin/python /Users/vchilamkur/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/vchilamkur/Documents/GitHub/Bin_Classification/camera_test/build/partition_table/partition-table.bin /Users/vchilamkur/Documents/GitHub/Bin_Classification/camera_test/build/camera_test.bin
+camera_test.bin binary size 0x11a620 bytes. Smallest app partition is 0x1f0000 bytes. 0xd59e0 bytes (43%) free.

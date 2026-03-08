@@ -1,0 +1,297 @@
+0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x400ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (30) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Mar  7 2026 15:32:34[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v1.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 001f0000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3b678h (243320) map[0m
+[0;32mI (172) esp_image: segment 1: paddr=0004b6a0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (172) esp_image: segment 2: paddr=0004b6c4 vaddr=3ffb0000 size=04954h ( 18772) load[0m
+[0;32mI (183) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=bbf48h (769864) map[0m
+[0;32mI (446) esp_image: segment 4: paddr=0010bf70 vaddr=3ffb4954 size=01eb4h (  7860) load[0m
+[0;32mI (449) esp_image: segment 5: paddr=0010de2c vaddr=40080000 size=1c7dch (116700) load[0m
+[0;32mI (510) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (510) boot: Disabling RNG early entropy source...[0m
+[0;32mI (520) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (522) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (522) esp_psram: Speed: 40MHz[0m
+[0;32mI (522) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (527) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (536) cpu_start: Multicore app[0m
+[0;32mI (1441) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1449) cpu_start: Pro cpu start user code[0m
+[0;32mI (1449) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1449) app_init: Application information:[0m
+[0;32mI (1450) app_init: Project name:     camera_test[0m
+[0;32mI (1454) app_init: App version:      fbe8ba6-dirty[0m
+[0;32mI (1458) app_init: Compile time:     Mar  7 2026 15:32:28[0m
+[0;32mI (1464) app_init: ELF file SHA256:  622324da4...[0m
+[0;32mI (1468) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (1472) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1476) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1480) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1484) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1490) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1495) heap_init: At 3FFBEBF8 len 00021408 (133 KiB): DRAM[0m
+[0;32mI (1501) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1506) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1512) heap_init: At 4009C7DC len 00003824 (14 KiB): IRAM[0m
+[0;32mI (1517) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1525) spi_flash: detected chip: generic[0m
+[0;32mI (1527) spi_flash: flash io: dio[0m
+[0;32mI (1532) main_task: Started on CPU0[0m
+[0;32mI (1542) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1542) main_task: Calling app_main()[0m
+[0;32mI (1622) classify: Classification task started[0m
+[0;32mI (1642) wifi:wifi driver task: 3ffd4064, prio:23, stack:6656, core=0[0m
+[0;32mI (1662) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (1662) wifi:wifi certification version: v7.0[0m
+[0;32mI (1662) wifi:config NVS flash: enabled[0m
+[0;32mI (1662) wifi:config nano formatting: disabled[0m
+[0;32mI (1662) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1672) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1672) wifi:Init management short buffer num: 32[0m
+[0;32mI (1672) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1682) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1682) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1692) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1692) wifi_init: rx ba win: 6[0m
+[0;32mI (1692) wifi_init: accept mbox: 6[0m
+[0;32mI (1702) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1702) wifi_init: udp mbox: 6[0m
+[0;32mI (1702) wifi_init: tcp mbox: 6[0m
+[0;32mI (1712) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1712) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1712) wifi_init: tcp mss: 1440[0m
+[0;32mI (1712) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1722) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1772) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1842) wifi:mode : sta (8c:4f:00:ac:7f:c8)[0m
+[0;32mI (1842) wifi:enable tsf[0m
+[0;32mI (1842) classify: === Scanning for nearby WiFi networks ===[0m
+[0;32mI (1852) classify: STA: started[0m
+[0;32mI (5252) classify: Found 47 networks:[0m
+[0;32mI (5252) classify:   [ 1] RSSI: -52  Ch: 6  "Berkeley-IoT"[0m
+[0;32mI (5252) classify:   [ 2] RSSI: -52  Ch: 6  "eduroam"[0m
+[0;32mI (5252) classify:   [ 3] RSSI: -52  Ch: 6  "Berkeley-Visitor"[0m
+[0;32mI (5252) classify:   [ 4] RSSI: -57  Ch: 6  "Vamsi’s iPhone (2)"[0m
+[0;32mI (5262) classify:   [ 5] RSSI: -70  Ch: 6  "Berkeley-IoT"[0m
+[0;32mI (5262) classify:   [ 6] RSSI: -71  Ch: 6  "eduroam"[0m
+[0;32mI (5272) classify:   [ 7] RSSI: -71  Ch: 6  "Berkeley-Visitor"[0m
+[0;32mI (5272) classify:   [ 8] RSSI: -77  Ch:11  "eduroam"[0m
+[0;32mI (5282) classify:   [ 9] RSSI: -78  Ch: 4  "DEEPDARKFANTASY"[0m
+[0;32mI (5292) classify:   [10] RSSI: -78  Ch:11  "Berkeley-Visitor"[0m
+[0;32mI (5292) classify:   [11] RSSI: -78  Ch:11  "Berkeley-IoT"[0m
+[0;32mI (5302) classify:   [12] RSSI: -79  Ch: 1  "Berkeley-Visitor"[0m
+[0;32mI (5302) classify:   [13] RSSI: -79  Ch: 1  "Berkeley-IoT"[0m
+[0;32mI (5312) classify:   [14] RSSI: -79  Ch: 1  "eduroam"[0m
+[0;32mI (5312) classify:   [15] RSSI: -79  Ch: 1  "Berkeley-Visitor"[0m
+[0;32mI (5322) classify:   [16] RSSI: -79  Ch: 6  "eduroam"[0m
+[0;32mI (5322) classify:   [17] RSSI: -80  Ch: 6  "Berkeley-IoT"[0m
+[0;32mI (5332) classify:   [18] RSSI: -80  Ch: 6  "Berkeley-Visitor"[0m
+[0;32mI (5332) classify:   [19] RSSI: -81  Ch: 1  "Berkeley-IoT"[0m
+[0;32mI (5342) classify:   [20] RSSI: -81  Ch: 1  "Berkeley-IoT"[0m
+[0;32mI (5342) classify: >>> Target SSID 'Vamsi’s iPhone (2)' FOUND! <<<[0m
+[0;33mW (5352) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (5412) classify: STA connecting to 'Vamsi’s iPhone (2)'...[0m
+[0;32mI (5912) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (5912) cam_hal: cam init ok[0m
+[0;32mI (5912) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (5912) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (5912) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (5952) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (5952) camera: Detected OV2640 camera[0m
+[0;32mI (5952) camera: Detected camera at address=0x30[0m
+[0;32mI (6032) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (6032) esp32 ll_cam: node_size: 2560, nodes_per_line: 1, lines_per_node: 1, dma_half_buffer_min:  2560, dma_half_buffer: 15360,lines_per_half_buffer:  6, dma_buffer_size: 30720, image_size: 153600[0m
+[0;32mI (6042) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 2560, node_cnt: 12, total_cnt: 10[0m
+[0;32mI (6052) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (6052) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (6062) cam_hal: cam config ok[0m
+[0;32mI (6062) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (6422) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (6432) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (6442) classify: Camera OK (RGB565 QVGA)[0m
+[0;32mI (6442) classify: HTTP server on port 80[0m
+[0;32mI (6452) classify: === ESP32-CAM Waste Classifier ===[0m
+[0;32mI (6452) classify: Stream available once WiFi connects (check IP above)[0m
+[0;32mI (6452) classify: Model:   google/gemini-2.5-flash-lite[0m
+[0;32mI (6462) classify: Let camera see empty scene for ~2s to learn background[0m
+[0;32mI (6462) main_task: Returned from app_main()[0m
+[0;32mI (6462) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (6482) wifi:state: assoc -> run (0x10)[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (6572) wifi:connected with Vamsi’s iPhone (2), aid = 2, channel 6, BW20, bssid = 62:56:0f:1a:cd:39[0m
+[0;32mI (6572) wifi:security: WPA2-PSK, phy: bgn, rssi: -51[0m
+[0;32mI (6602) wifi:pm start, type: 1[0m
+
+[0;32mI (6602) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (6622) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (7862) esp_netif_handlers: sta ip: 172.20.10.9, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (7862) classify: STA: got IP 172.20.10.9[0m
+[0;32mI (7862) classify: Stream URL:  http://172.20.10.9/[0m
+cam_hal: EV-EOF-OVF - 100 additional misses
+[0;32mI (37452) wifi:<ba-add>idx:0 (ifx:0, 62:56:0f:1a:cd:39), tid:0, ssn:2, winSize:64[0m
+[0;32mI (47922) classify: 📷 Learning background... 10/30 frames[0m
+[0;32mI (52152) classify: 📷 Learning background... 20/30 frames[0m
+[0;32mI (55942) classify: ✅ Background learned (30 frames). Place an object to classify![0m
+[0;32mI (66262) classify: 🎯 Object stable at (60,0 120x90) for 15 frames — triggering classification![0m
+[0;32mI (66452) classify: Snapshot queued (12327 bytes JPEG)[0m
+[0;32mI (66462) classify: 🔄 Processing snapshot (12327 bytes JPEG)...[0m
+[0;32mI (66462) classify:    Step 1/4: Base64 encoding...[0m
+[0;32mI (66472) classify:    Step 2/4: Building API request (16436 bytes base64)...[0m
+[0;32mI (66482) classify:    Step 3/4: Sending to OpenRouter (google/gemini-2.5-flash-lite)...[0m
+[0;32mI (68202) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (70822) classify:    Step 4/4: Got response in 4336 ms (status 200)[0m
+[0;32mI (70822) classify: [0m
+[0;32mI (70822) classify: ╔══════════════════════════════════════╗[0m
+[0;32mI (70832) classify: ║  🏷  CLASSIFICATION: Metal           ║[0m
+[0;32mI (70842) classify: ╚══════════════════════════════════════╝[0m
+[0;32mI (70852) classify: [0m
+[0;32mI (72652) classify: 👁 Object #0 at (90,100 90x60) age=20 STABLE (already classified)[0m
+[0;32mI (72652) classify: 👁 Object #1 at (0,130 200x110) age=1[0m
+[0;32mI (72652) classify: 👁 Object #2 at (0,70 50x50) age=-2[0m
+[0;32mI (72662) classify: 👁 Object #3 at (150,0 170x200) age=1[0m
+[0;32mI (72662) classify: 👁 Object #4 at (220,190 100x50) age=0[0m
+cam_hal: EV-EOF-OVF - 100 additional misses
+[0;32mI (88332) classify: 👁 Object #0 at (0,0 200x220) age=50 STABLE (already classified)[0m
+[0;32mI (88332) classify: 👁 Object #1 at (120,0 200x180) age=12[0m
+[0;32mI (88332) classify: 👁 Object #2 at (0,140 200x80) age=-1[0m
+[0;32mI (104702) classify: 👁 Object #0 at (0,50 40x50) age=56 STABLE (already classified)[0m
+[0;32mI (104702) classify: 👁 Object #1 at (220,0 100x140) age=2[0m
+[0;32mI (104702) classify: 👁 Object #2 at (210,190 110x50) age=2[0m
+[0;32mI (121352) classify: 👁 Object #0 at (20,80 40x40) age=54 STABLE (already classified)[0m
+[0;32mI (121352) classify: 👁 Object #1 at (280,10 30x70) age=12[0m
+[0;32mI (121352) classify: 👁 Object #2 at (80,0 110x110) age=8[0m
+[0;32mI (121362) classify: 👁 Object #3 at (0,120 110x80) age=6[0m
+[0;32mI (121362) classify: 👁 Object #4 at (240,70 50x60) age=0[0m
+[0;32mI (123062) classify: 🎯 Object stable at (210,10 110x140) for 15 frames — triggering classification![0m
+[0;32mI (123252) classify: Snapshot queued (7708 bytes JPEG)[0m
+[0;32mI (123262) classify: 🔄 Processing snapshot (7708 bytes JPEG)...[0m
+[0;32mI (123262) classify:    Step 1/4: Base64 encoding...[0m
+[0;32mI (123272) classify:    Step 2/4: Building API request (10280 bytes base64)...[0m
+[0;32mI (123272) classify:    Step 3/4: Sending to OpenRouter (google/gemini-2.5-flash-lite)...[0m
+cam_hal: EV-VSYNC-OVF - 100 additional misses
+[0;32mI (124862) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (127192) classify:    Step 4/4: Got response in 3917 ms (status 200)[0m
+[0;32mI (127192) classify: [0m
+[0;32mI (127192) classify: ╔══════════════════════════════════════╗[0m
+[0;32mI (127202) classify: ║  🏷  CLASSIFICATION: Trash           ║[0m
+[0;32mI (127212) classify: ╚══════════════════════════════════════╝[0m
+[0;32mI (127222) classify: [0m
+[0;32mI (128442) classify: 🎯 Object stable at (80,0 110x100) for 20 frames — triggering classification![0m
+[0;32mI (128642) classify: Snapshot queued (7899 bytes JPEG)[0m
+[0;32mI (128652) classify: 🔄 Processing snapshot (7899 bytes JPEG)...[0m
+[0;32mI (128652) classify:    Step 1/4: Base64 encoding...[0m
+[0;32mI (128652) classify:    Step 2/4: Building API request (10532 bytes base64)...[0m
+[0;32mI (128662) classify:    Step 3/4: Sending to OpenRouter (google/gemini-2.5-flash-lite)...[0m
+[0;32mI (130292) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (132902) classify:    Step 4/4: Got response in 4239 ms (status 200)[0m
+[0;32mI (132902) classify: [0m
+[0;32mI (132902) classify: ╔══════════════════════════════════════╗[0m
+[0;32mI (132912) classify: ║  🏷  CLASSIFICATION: Trash           ║[0m
+[0;32mI (132922) classify: ╚══════════════════════════════════════╝[0m
+[0;32mI (132932) classify: [0m
+[0;32mI (133472) classify: 🎯 Object stable at (0,140 70x60) for 15 frames — triggering classification![0m
+[0;32mI (133672) classify: Snapshot queued (7875 bytes JPEG)[0m
+[0;32mI (133672) classify: 🔄 Processing snapshot (7875 bytes JPEG)...[0m
+[0;32mI (133692) classify:    Step 1/4: Base64 encoding...[0m
+[0;32mI (133702) classify:    Step 2/4: Building API request (10500 bytes base64)...[0m
+[0;32mI (133702) classify:    Step 3/4: Sending to OpenRouter (google/gemini-2.5-flash-lite)...[0m
+[0;32mI (135302) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (137432) classify:    Step 4/4: Got response in 3730 ms (status 200)[0m
+[0;32mI (137442) classify: [0m
+[0;32mI (137442) classify: ╔══════════════════════════════════════╗[0m
+[0;32mI (137452) classify: ║  🏷  CLASSIFICATION: Trash           ║[0m
+[0;32mI (137452) classify: ╚══════════════════════════════════════╝[0m
+[0;32mI (137462) classify: [0m
+[0;32mI (139092) classify: 👁 Object #0 at (10,70 60x50) age=36 STABLE (already classified)[0m
+[0;32mI (139102) classify: 👁 Object #1 at (100,0 90x90) age=42 STABLE (already classified)[0m
+[0;32mI (139102) classify: 👁 Object #2 at (250,10 70x100) age=20 STABLE (already classified)[0m
+[0;32mI (139112) classify: 👁 Object #3 at (210,110 40x40) age=12[0m
+[0;32mI (139112) classify: 👁 Object #6 at (80,170 130x40) age=-1[0m
+[0;32mI (139122) classify: 👁 Object #7 at (0,140 70x60) age=23 STABLE (already classified)[0m
+[0;32mI (149412) classify: 🎯 Object stable at (0,140 70x60) for 15 frames — triggering classification![0m
+[0;32mI (149602) classify: 🔄 Processing snapshot (8041 bytes JPEG)...[0m
+[0;32mI (149602) classify: Snapshot queued (8041 bytes JPEG)[0m
+[0;32mI (149602) classify:    Step 1/4: Base64 encoding...[0m
+[0;32mI (149622) classify:    Step 2/4: Building API request (10724 bytes base64)...[0m
+[0;32mI (149622) classify:    Step 3/4: Sending to OpenRouter (google/gemini-2.5-flash-lite)...[0m
+[0;32mI (151292) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (153902) classify:    Step 4/4: Got response in 4277 ms (status 200)[0m
+[0;32mI (153902) classify: [0m
+[0;32mI (153902) classify: ╔══════════════════════════════════════╗[0m
+[0;32mI (153912) classify: ║  🏷  CLASSIFICATION: Trash           ║[0m
+[0;32mI (153922) classify: ╚══════════════════════════════════════╝[0m
+[0;32mI (153932) classify: [0m
+[0;32mI (155802) classify: 🎯 Object stable at (210,110 40x40) for 15 frames — triggering classification![0m
+[0;32mI (156002) classify: Snapshot queued (12537 bytes JPEG)[0m
+[0;32mI (156012) classify: 🔄 Processing snapshot (12537 bytes JPEG)...[0m
+[0;32mI (156012) classify:    Step 1/4: Base64 encoding...[0m
+[0;32mI (156022) classify:    Step 2/4: Building API request (16716 bytes base64)...[0m
+[0;32mI (156032) classify:    Step 3/4: Sending to OpenRouter (google/gemini-2.5-flash-lite)...[0m
+[0;32mI (156702) classify: 👁 Object #0 at (40,50 170x180) age=22 STABLE (already classified)[0m
+[0;32mI (156712) classify: 👁 Object #1 at (110,0 70x40) age=70 STABLE (already classified)[0m
+[0;32mI (156712) classify: 👁 Object #2 at (290,10 30x50) age=50 STABLE (already classified)[0m
+[0;32mI (156722) classify: 👁 Object #3 at (210,70 80x80) age=16 STABLE (already classified)[0m
+[0;32mI (156732) classify: 👁 Object #4 at (90,100 120x120) age=3[0m
+[0;32mI (156732) classify: 👁 Object #5 at (90,50 120x120) age=2[0m
+[0;32mI (156742) classify: 👁 Object #6 at (0,100 100x100) age=21 STABLE (already classified)[0m
+[0;32mI (156742) classify: 👁 Object #7 at (0,110 70x90) age=3 (already classified)[0m
+[0;32mI (157622) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (160372) classify:    Step 4/4: Got response in 4341 ms (status 200)[0m
+[0;32mI (160372) classify: [0m
+[0;32mI (160372) classify: ╔══════════════════════════════════════╗[0m
+[0;32mI (160382) classify: ║  🏷  CLASSIFICATION: Plastic         ║[0m
+[0;32mI (160392) classify: ╚══════════════════════════════════════╝[0m
+[0;32mI (160402) classify: [0m
+[0;32mI (172742) classify: 👁 Object #0 at (80,0 110x100) age=52 STABLE (already classified)[0m
+[0;32mI (172742) classify: 👁 Object #1 at (240,0 80x130) age=82 STABLE (already classified)[0m
+[0;32mI (172752) classify: 👁 Object #2 at (260,0 60x100) age=44 STABLE (already classified)[0m
+[0;32mI (172752) classify: 👁 Object #3 at (120,130 120x60) age=4[0m
+[0;32mI (172762) classify: 👁 Object #4 at (0,140 70x70) age=13[0m
+[0;32mI (172772) classify: 👁 Object #5 at (220,190 100x50) age=1[0m
+[0;32mI (172772) classify: 👁 Object #6 at (10,50 50x60) age=17 STABLE (already classified)[0m
+[0;32mI (172782) classify: 👁 Object #7 at (120,0 70x110) age=0[0m
+[0;32mI (180262) classify: 🎯 Object stable at (0,140 70x60) for 15 frames — triggering classification![0m
+[0;32mI (180452) classify: Snapshot queued (7915 bytes JPEG)[0m
+[0;32mI (180462) classify: 🔄 Processing snapshot (7915 bytes JPEG)...[0m
+[0;32mI (180462) classify:    Step 1/4: Base64 encoding...[0m
+[0;32mI (180462) classify:    Step 2/4: Building API request (10556 bytes base64)...[0m
+[0;32mI (180472) classify:    Step 3/4: Sending to OpenRouter (google/gemini-2.5-flash-lite)...[0m
+[0;32mI (182052) esp-x509-crt-bundle: Certificate validated[0m
+cam_hal: EV-EOF-OVF - 100 additional misses
+[0;32mI (184602) classify:    Step 4/4: Got response in 4128 ms (status 200)[0m
+[0;32mI (184602) classify: [0m
+[0;32mI (184602) classify: ╔══════════════════════════════════════╗[0m
+[0;32mI (184612) classify: ║  🏷  CLASSIFICATION: Trash           ║[0m
+[0;32mI (184622) classify: ╚══════════════════════════════════════╝[0m
+[0;32mI (184632) classify: [0m
+[0;32mI (188672) classify: 👁 Object #0 at (70,0 110x90) age=80 STABLE (already classified)[0m
+[0;32mI (188672) classify: 👁 Object #1 at (250,10 70x100) age=104 STABLE (already classified)[0m
+[0;32mI (188672) classify: 👁 Object #2 at (250,60 50x50) age=44 STABLE (already classified)[0m
+[0;32mI (188682) classify: 👁 Object #3 at (0,140 70x60) age=30 STABLE (already classified)[0m
+[0;32mI (188692) classify: 👁 Object #4 at (210,110 50x40) age=3[0m
