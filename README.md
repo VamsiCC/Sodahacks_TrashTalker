@@ -41,6 +41,9 @@ Whether you're sorting household waste or managing industrial materials, TrashTa
 - **Sodahacks 2025 Presentation**: [View Slides](https://docs.google.com/presentation/d/18R6MJeCCg-8uaThV88Z-llwF2COXKAZdhlyq_RTMkm0/edit?usp=sharing)
 
 View our winning presentation showcasing TrashTalker's innovation and impact on sustainability!
+
+---
+
 ## 🛠️ Tech Stack
 
 | Component | Technology |
