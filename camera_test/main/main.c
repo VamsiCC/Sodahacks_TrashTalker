@@ -44,7 +44,7 @@ static const char *TAG = "classify";
 #define USE_PHONE_HOTSPOT   1
 
 #define OPENROUTER_API_KEY  "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"
-#define OPENROUTER_MODEL    "google/gemini-2.5-flash-lite"
+#define OPENROUTER_MODEL    "openai/gpt-5.4"
 #define OPENROUTER_URL      "https://openrouter.ai/api/v1/chat/completions"
 
 /* ══════════════════════════════════════════════════════════ */
@@ -77,7 +77,7 @@ static void wifi_ev(void *arg, esp_event_base_t base, int32_t id, void *data)
             esp_wifi_connect();
             break;
         }
-        default: break;
+        default: break
         }
     } else if (base == IP_EVENT && id == IP_EVENT_STA_GOT_IP) {
         ip_event_got_ip_t *evt = (ip_event_got_ip_t *)data;
